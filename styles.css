@@ -98,6 +98,7 @@ body {
     color: #24292e;
     background-color: #f0f0f0;
     border-color: #1b1f2326;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -114,6 +115,7 @@ body {
     border: none;
     border-bottom: 2px solid gray;
     background: transparent;
+    -webkit-appearance: none;
 }
 
 .form {
