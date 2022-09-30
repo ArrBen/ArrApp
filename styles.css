@@ -118,6 +118,10 @@ body {
     -webkit-appearance: none;
 }
 
+.inp:focus {
+    outline: none;
+}
+
 .form {
     display: flex;
     flex-direction: column;
