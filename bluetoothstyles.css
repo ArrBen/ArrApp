@@ -55,32 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-between;
-}
-
-
-
-.inputs {
-    display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 25vw;
-    font-size: 1.6vw;
-    font-family: 'Work Sans', sans-serif;
-    padding: 1.5vh 0 1.5vh 0;
-}
-
-.inputs label {
-    width: 100%;
-}
-
-.inputs input {
-    width: 100%;
-    margin-left: 0.5vw;
-}
-
-.inputs .btn {
-    margin: 0;
 }
 
 .btn {
@@ -108,31 +83,54 @@ body {
     transition-duration: 0.1s; 
 }
 
-
-.inp {
-    height: 3vh;
-    width: 40%;
-    padding: 5px;
-    border: none;
-    border-bottom: 2px solid gray;
-    background: transparent;
-    -webkit-appearance: none;
-}
-
-.inp:focus {
-    outline: none;
-}
-
-.form {
+#headingdevices {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding-top: 2vh;
 }
 
-.check {
-    padding: 2vh;
+.device {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 5vh;
+    border: solid 0.2vh rgba(128, 128, 128, 0.58);
+    border-radius: 6px;
+    padding: 5px;
+    margin: 0.5vh;
 }
+
+.device .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+}
+
+.device .description img {
+    height: 50%;
+    padding-right: 20px;
+}
+
+.buttons {
+    display: flex;
+
+}
+
+.buttons .btn {
+    margin: 5px;
+}
+
+.device .description h1 {
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+
 
 
 @media screen and (max-width: 1400px) {
@@ -157,26 +155,28 @@ body {
         width: 50vw;
     }
 
-    .settings-card .content {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .settings-card .content .inputs {
-        width: 70vw;
+    .device {
         flex-direction: column;
-    }
-
-    .inputs label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        width: 100%;
-    }
-
-    .inputs input {
+        height: 10vh;
         width: 80%;
-        margin: 2vh;
+        padding: 0.5vh;
+        border: solid 0.2vh rgba(128, 128, 128, 0.58);
+    }
+
+    .device .description img {
+        height: 2vh;
+    }
+
+    .device .description h1 {
+        font-size: 1em;
+    }
+
+    .buttons {
+        display: flex;
+    }
+
+    .buttons .btn {
+        width: 20vw;
+        margin: 5px;
     }
 }
