@@ -94,7 +94,7 @@ body {
 
 .device {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 60%;
     height: 5vh;
