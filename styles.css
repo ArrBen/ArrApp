@@ -123,6 +123,9 @@ body {
     justify-content: space-between;
 }
 
+.check {
+    padding: 2vh;
+}
 
 
 @media screen and (max-width: 1400px) {
