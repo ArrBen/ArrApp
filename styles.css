@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Work+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(47,127,204);
+    background: linear-gradient(90deg, rgba(47,127,204,1) 0%, rgba(0,45,98,1) 100%);
+    width: auto;
+    font-family: 'Work Sans', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.settings-card {
+    background: #fff;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.settings-card .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    padding: 20px 20px;
+    border-bottom: solid 0.2vh rgba(128, 128, 128, 0.58);
+}
+
+.settings-card .header img {
+    width: 35vh;
+    padding: 10px;
+}
+
+.settings-card .header .btn {
+    width: 15vw;
+    margin: 1vw;
+}
+
+.settings-card .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+
+
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25vw;
+    font-size: 1.6vw;
+    font-family: 'Work Sans', sans-serif;
+    padding: 1.5vh 0 1.5vh 0;
+}
+
+.inputs label {
+    width: 100%;
+}
+
+.inputs input {
+    width: 100%;
+    margin-left: 0.5vw;
+}
+
+.inputs .btn {
+    margin: 0;
+}
+
+.btn {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    color: #24292e;
+    background-color: #f0f0f0;
+    border-color: #1b1f2326;
+}
+
+.btn:hover {
+    background-color: #f4f4f489;
+    border-color: #1b1f2326;
+    transition-duration: 0.1s; 
+}
+
+
+.inp {
+    height: 3vh;
+    width: 40%;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid gray;
+    background: transparent;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .settings-card {
+        height: 80vh;
+        width: 70vw;
+    }
+
+    .settings-card .header {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 0;
+        height: 40vh;
+        
+    }
+    .settings-card .header img {
+        width: 30vh;
+        margin: 3vh;
+    }
+    .settings-card .header .btn {
+        margin: 1vh;
+        width: 50vw;
+    }
+
+    .settings-card .content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .settings-card .content .inputs {
+        width: 70vw;
+        flex-direction: column;
+    }
+
+    .inputs label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .inputs input {
+        width: 80%;
+        margin: 2vh;
+    }
+}
