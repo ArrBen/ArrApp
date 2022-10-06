@@ -52,12 +52,14 @@ body {
 }
 
 .settings-card .content {
-    height: 100%;
+    padding-top: 7vh;
+    height: 75%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
 }
 
 .btn {
@@ -159,7 +161,9 @@ body {
     }
 
     .settings-card .content {
-        overflow: scroll;
+        height: 44vh;
+        padding-top: 27vh;
+        overflow-y: scroll;
     }
 
     .device {

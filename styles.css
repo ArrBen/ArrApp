@@ -165,6 +165,7 @@ body {
     .settings-card .content {
         justify-content: center;
         align-items: center;
+        height: 60vh;
     }
 
     .settings-card .content .inputs {
